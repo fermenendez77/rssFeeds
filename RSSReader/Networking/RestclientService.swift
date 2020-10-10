@@ -136,10 +136,6 @@ class RestClientService {
         }
         dataTask.resume()
     }
-    
-    func performTask(request : URLRequest) {
-        
-    }
 }
 
 enum ErrorData : Error {
