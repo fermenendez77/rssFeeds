@@ -33,6 +33,20 @@
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM6-z9-qwh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ae-a4-7z3">
+                                <rect key="frame" x="30" y="643" width="223.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-Pi-L0v">
+                                <rect key="frame" x="261" y="638" width="89" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Create one!"/>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKO-A7-v9B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,9 +55,13 @@
                             <constraint firstItem="ocH-TN-27s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bua-1k-6ha"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZET-jL-Rhk" secondAttribute="trailing" constant="20" id="COQ-2d-QOJ"/>
                             <constraint firstItem="ZET-jL-Rhk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gsu-17-SUx"/>
+                            <constraint firstItem="Kg7-Pi-L0v" firstAttribute="leading" secondItem="9ae-a4-7z3" secondAttribute="trailing" constant="7.5" id="Pw9-Le-va3"/>
+                            <constraint firstItem="9ae-a4-7z3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bdd-28-VAI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ocH-TN-27s" secondAttribute="trailing" constant="20" id="eHV-tR-8Bw"/>
                             <constraint firstItem="hO2-pG-UTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iD2-vb-Lg1"/>
+                            <constraint firstItem="Kg7-Pi-L0v" firstAttribute="top" secondItem="hO2-pG-UTu" secondAttribute="bottom" constant="35" id="llA-gi-u8h"/>
                             <constraint firstItem="ZET-jL-Rhk" firstAttribute="top" secondItem="ocH-TN-27s" secondAttribute="bottom" constant="20" id="sf0-6r-Z2t"/>
+                            <constraint firstItem="9ae-a4-7z3" firstAttribute="top" secondItem="hO2-pG-UTu" secondAttribute="bottom" constant="40" id="vhq-Uf-aGY"/>
                             <constraint firstItem="ocH-TN-27s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vkz-mq-h9j"/>
                         </constraints>
                     </view>

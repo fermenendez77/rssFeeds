@@ -50,6 +50,10 @@ class LoginViewController: UIViewController {
         presenter = LoginPresenterImp(view: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        presenter?.checkSession()
+    }
+    
     private func setUIListeners() {
         userTextField.addTarget(self, action: #selector(self.userNameFieldDidChange(_:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(self.passwordFieldDidChange(_:)), for: .editingChanged)
@@ -70,6 +74,16 @@ class LoginViewController: UIViewController {
             return
         }
         presenter?.loginUser(username: username, password: password)
+    }
+    
+    @IBAction func createAccountAction(_ sender: Any) {
+        let signUpVC = SignUpViewController()
+        let presenter = SignUpPresenterImp(view: signUpVC)
+        signUpVC.presenter = presenter
+        signUpVC.onCompleted = { [weak self] in
+            self?.presenter?.checkSession()
+        }
+        self.present(signUpVC, animated: true, completion: nil)
     }
 }
 

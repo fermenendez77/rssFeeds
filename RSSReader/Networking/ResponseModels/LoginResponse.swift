@@ -9,8 +9,9 @@
 import Foundation
 
 struct LoginResponse: Codable {
+    
     let accessToken: String
-    let userID: Int
+    let userID: Int?
 
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"

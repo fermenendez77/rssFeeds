@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139B4F122531479700A822DF /* RequestSubscribeRSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F112531479700A822DF /* RequestSubscribeRSSFeed.swift */; };
+		139B4F1C25314B0600A822DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F1A25314B0600A822DF /* SignUpViewController.swift */; };
+		139B4F1D25314B0600A822DF /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139B4F1B25314B0600A822DF /* SignUpViewController.xib */; };
+		139B4F2025314D5A00A822DF /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F1F25314D5A00A822DF /* SignUpPresenter.swift */; };
+		139B4F292531527E00A822DF /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F282531527E00A822DF /* UserSession.swift */; };
+		139B4F2C253157D900A822DF /* BodyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F2B253157D900A822DF /* BodyRequest.swift */; };
+		139B4F3925315EC100A822DF /* ArticlesFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F3725315EC100A822DF /* ArticlesFeedsViewController.swift */; };
+		139B4F3A25315EC100A822DF /* ArticlesFeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139B4F3825315EC100A822DF /* ArticlesFeedsViewController.xib */; };
+		139B4F3D25315F3400A822DF /* ArticlesFeedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F3C25315F3400A822DF /* ArticlesFeedsPresenter.swift */; };
+		139B4F40253160D500A822DF /* RSSArticlesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F3F253160D500A822DF /* RSSArticlesResponse.swift */; };
+		139B4F442531624700A822DF /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B4F422531624700A822DF /* ArticlesTableViewCell.swift */; };
+		139B4F452531624700A822DF /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139B4F432531624700A822DF /* ArticlesTableViewCell.xib */; };
 		13A2FC3C2531088F00B48D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2FC3B2531088F00B48D30 /* AppDelegate.swift */; };
 		13A2FC3E2531088F00B48D30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2FC3D2531088F00B48D30 /* SceneDelegate.swift */; };
 		13A2FC402531088F00B48D30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A2FC3F2531088F00B48D30 /* LoginViewController.swift */; };
@@ -27,6 +39,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139B4F112531479700A822DF /* RequestSubscribeRSSFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSubscribeRSSFeed.swift; sourceTree = "<group>"; };
+		139B4F1A25314B0600A822DF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		139B4F1B25314B0600A822DF /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		139B4F1F25314D5A00A822DF /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		139B4F282531527E00A822DF /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		139B4F2B253157D900A822DF /* BodyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyRequest.swift; sourceTree = "<group>"; };
+		139B4F3725315EC100A822DF /* ArticlesFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesFeedsViewController.swift; sourceTree = "<group>"; };
+		139B4F3825315EC100A822DF /* ArticlesFeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesFeedsViewController.xib; sourceTree = "<group>"; };
+		139B4F3C25315F3400A822DF /* ArticlesFeedsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesFeedsPresenter.swift; sourceTree = "<group>"; };
+		139B4F3F253160D500A822DF /* RSSArticlesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSArticlesResponse.swift; sourceTree = "<group>"; };
+		139B4F422531624700A822DF /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		139B4F432531624700A822DF /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
 		13A2FC382531088F00B48D30 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A2FC3B2531088F00B48D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A2FC3D2531088F00B48D30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +83,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139B4F10253145A600A822DF /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				13A2FC53253109F600B48D30 /* UserLogin.swift */,
+				139B4F112531479700A822DF /* RequestSubscribeRSSFeed.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		139B4F1425314AC700A822DF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				139B4F1A25314B0600A822DF /* SignUpViewController.swift */,
+				139B4F1B25314B0600A822DF /* SignUpViewController.xib */,
+				139B4F1F25314D5A00A822DF /* SignUpPresenter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		139B4F272531526700A822DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				139B4F282531527E00A822DF /* UserSession.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		139B4F3225315E9700A822DF /* ArticlesFeeds */ = {
+			isa = PBXGroup;
+			children = (
+				139B4F3725315EC100A822DF /* ArticlesFeedsViewController.swift */,
+				139B4F3825315EC100A822DF /* ArticlesFeedsViewController.xib */,
+				139B4F3C25315F3400A822DF /* ArticlesFeedsPresenter.swift */,
+				139B4F422531624700A822DF /* ArticlesTableViewCell.swift */,
+				139B4F432531624700A822DF /* ArticlesTableViewCell.xib */,
+			);
+			path = ArticlesFeeds;
+			sourceTree = "<group>";
+		};
 		13A2FC2F2531088F00B48D30 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +141,7 @@
 		13A2FC3A2531088F00B48D30 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
+				139B4F272531526700A822DF /* Helpers */,
 				13D0F8A925311FC6001B3A25 /* Resources */,
 				13A2FC5925310C3400B48D30 /* Scenes */,
 				13A2FC522531098500B48D30 /* Networking */,
@@ -95,7 +159,6 @@
 		13A2FC512531095200B48D30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				13A2FC53253109F600B48D30 /* UserLogin.swift */,
 				13D0F8AB253124E5001B3A25 /* RSSFeeds.swift */,
 			);
 			path = Models;
@@ -104,8 +167,10 @@
 		13A2FC522531098500B48D30 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				139B4F10253145A600A822DF /* RequestModels */,
 				13D0F8A425311795001B3A25 /* ResponseModels */,
 				13A2FC5625310AC700B48D30 /* RestclientService.swift */,
+				139B4F2B253157D900A822DF /* BodyRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -113,6 +178,8 @@
 		13A2FC5925310C3400B48D30 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				139B4F3225315E9700A822DF /* ArticlesFeeds */,
+				139B4F1425314AC700A822DF /* SignUp */,
 				13D0F8B12531254C001B3A25 /* RSSFeeds */,
 				13A2FC5A25310C4F00B48D30 /* Login */,
 			);
@@ -133,6 +200,7 @@
 			children = (
 				13D0F8A5253117CA001B3A25 /* LoginResponse.swift */,
 				13D0F8AE2531250C001B3A25 /* RSSFeedsResponse.swift */,
+				139B4F3F253160D500A822DF /* RSSArticlesResponse.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -223,8 +291,11 @@
 			files = (
 				13A2FC482531089200B48D30 /* LaunchScreen.storyboard in Resources */,
 				13D0F8B925312590001B3A25 /* RSSFeedsViewController.xib in Resources */,
+				139B4F3A25315EC100A822DF /* ArticlesFeedsViewController.xib in Resources */,
 				13D0F8C825313C94001B3A25 /* RSSFeedsTableViewCell.xib in Resources */,
+				139B4F452531624700A822DF /* ArticlesTableViewCell.xib in Resources */,
 				13A2FC452531089200B48D30 /* Assets.xcassets in Resources */,
+				139B4F1D25314B0600A822DF /* SignUpViewController.xib in Resources */,
 				13A2FC432531088F00B48D30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,17 +308,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				13D0F8AC253124E5001B3A25 /* RSSFeeds.swift in Sources */,
+				139B4F442531624700A822DF /* ArticlesTableViewCell.swift in Sources */,
 				13A2FC5C25310C7600B48D30 /* LoginPresenter.swift in Sources */,
 				13A2FC402531088F00B48D30 /* LoginViewController.swift in Sources */,
+				139B4F2C253157D900A822DF /* BodyRequest.swift in Sources */,
+				139B4F2025314D5A00A822DF /* SignUpPresenter.swift in Sources */,
 				13D0F8B825312590001B3A25 /* RSSFeedsViewController.swift in Sources */,
+				139B4F40253160D500A822DF /* RSSArticlesResponse.swift in Sources */,
 				13D0F8C725313C94001B3A25 /* RSSFeedsTableViewCell.swift in Sources */,
 				13D0F8BD253125D0001B3A25 /* RSSFeedsPresenter.swift in Sources */,
 				13A2FC3C2531088F00B48D30 /* AppDelegate.swift in Sources */,
+				139B4F122531479700A822DF /* RequestSubscribeRSSFeed.swift in Sources */,
+				139B4F1C25314B0600A822DF /* SignUpViewController.swift in Sources */,
 				13A2FC5725310AC700B48D30 /* RestclientService.swift in Sources */,
 				13A2FC54253109F600B48D30 /* UserLogin.swift in Sources */,
+				139B4F3925315EC100A822DF /* ArticlesFeedsViewController.swift in Sources */,
 				13A2FC3E2531088F00B48D30 /* SceneDelegate.swift in Sources */,
 				13D0F8AF2531250C001B3A25 /* RSSFeedsResponse.swift in Sources */,
 				13D0F8A6253117CA001B3A25 /* LoginResponse.swift in Sources */,
+				139B4F292531527E00A822DF /* UserSession.swift in Sources */,
+				139B4F3D25315F3400A822DF /* ArticlesFeedsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

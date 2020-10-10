@@ -13,18 +13,22 @@ protocol RSSFeedsPresenter : class  {
     
     func configure(cell : RSSFeedsTableViewCell, at indexPath : IndexPath)
     func viewDidLoad()
-    
+    func registerNewRSSFeed(urlString : String)
+    func logout()
+    func selectedRSS(at indexPath : IndexPath)
     var rssfeeds : [RSSFeeds] { get set }
     
 }
 
 class RSSFeedsPresenterImp : RSSFeedsPresenter {
     
-    
-    
-    private var view : RSSFeedsView
-    
+
+    private weak var view : RSSFeedsView?
     public var rssfeeds : [RSSFeeds] = []
+    
+    lazy var accessToken : String? = {
+        UserSession.getUserToken()
+    }()
     
     required init(view: RSSFeedsView) {
         self.view = view
@@ -39,18 +43,26 @@ class RSSFeedsPresenterImp : RSSFeedsPresenter {
         cell.configure(title: rssFeed.title)
         cell.configure(url: rssFeed.url)
     }
-
-    func getAccessToken() -> String? {
-        if let user = UserDefaults.standard.data(forKey: "userLogged") {
-            if let decoded = try? JSONDecoder().decode(LoginResponse.self, from: user) {
-                return decoded.accessToken
-            }
+    
+    func registerNewRSSFeed(urlString: String) {
+        guard let _ = URL(string: urlString) else {
+            return
         }
-        return nil
+        requestSubscribeRSSFeed(url: urlString)
+    }
+    
+    func logout() {
+        UserSession.endSession()
+        view?.endViewController()
+    }
+    
+    func selectedRSS(at indexPath: IndexPath) {
+        let rss = rssfeeds[indexPath.row]
+        view?.presentArticlesView(with: rss)
     }
     
     func fetchRSSFeeds() {
-        guard let token = getAccessToken() else {
+        guard let token = accessToken else {
             return
         }
         let restClient = RestClientService(urlBase: "167.99.162.146")
@@ -63,10 +75,34 @@ class RSSFeedsPresenterImp : RSSFeedsPresenter {
                                     return
                                 }
                                 strongSelf.rssfeeds = rssFeeds
-                                strongSelf.view.loadData()
+                                strongSelf.view?.loadData()
                                },
                                errorHandler: { [weak self] error in
                                     print(error)
+                               })
+    }
+    
+    func requestSubscribeRSSFeed(url : String) {
+        
+        guard let token = accessToken else {
+            return
+        }
+        let body = RequestSubscribeRSSFeed(url: url)
+        let restClient = RestClientService(urlBase: "167.99.162.146")
+        restClient.dataRequest(endpoint: "/feeds/add",
+                               body: body,
+                               method: .POST,
+                               token: token,
+                               returnType: RSSFeeds.self,
+                               completionHandler: { [weak self] rssFeed in
+                                guard let strongSelf = self else {
+                                    return
+                                }
+                                self?.rssfeeds.append(rssFeed)
+                                strongSelf.view?.loadData()
+                               },
+                               errorHandler: { [weak self] error in
+                                    self?.fetchRSSFeeds()
                                })
     }
 }
